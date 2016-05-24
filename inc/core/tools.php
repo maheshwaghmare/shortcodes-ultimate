@@ -696,6 +696,7 @@ class Su_Tools {
 			if ( $args['source']['val'] !== 'recent' ) {
 				$query['post__in'] = (array) explode( ',', $args['source']['val'] );
 				$query['orderby'] = 'post__in';
+				$query['post_type'] = 'any';
 			}
 		}
 		// Source: category
